@@ -19,6 +19,6 @@ class NetworkModule {
     }
 
     fun providesUserApi(retrofit:Retrofit):UserApi{
-       return retrofit.create(UserApi::class)
+       return retrofit.create(UserApi::class.java)
     }
 }
